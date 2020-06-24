@@ -9,10 +9,6 @@ const routes: Routes = [
     component: OffersPage
   },
   {
-    path: 'new-offers',
-    loadChildren: () => import('./new-offers/new-offers.module').then( m => m.NewOffersPageModule)
-  },
-  {
     path: 'new-offer',
     loadChildren: () => import('./new-offer/new-offer.module').then( m => m.NewOfferPageModule)
   },
@@ -20,10 +16,7 @@ const routes: Routes = [
     path: 'edit-offer',
     loadChildren: () => import('./edit-offer/edit-offer.module').then( m => m.EditOfferPageModule)
   },
-  {
-    path: 'place-bookings',
-    loadChildren: () => import('./place-bookings/place-bookings.module').then( m => m.PlaceBookingsPageModule)
-  },
+ 
   {
     path: 'offer-bookings',
     loadChildren: () => import('./offer-bookings/offer-bookings.module').then( m => m.OfferBookingsPageModule)

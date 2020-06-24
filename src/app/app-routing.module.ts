@@ -4,21 +4,8 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [  
   {
     path: '',
-    redirectTo: 'recipes',
+    redirectTo: 'places',
     pathMatch: 'full'
-  },
-  {
-    path: 'recipes',
-    children: [
-      {
-        path: '',
-        loadChildren: './recipes/recipes.module#RecipesPageModule'
-      },
-      {
-      path: ':recipesId',
-      loadChildren: './recipes/recipe-detail/recipe-detail.module#RecipeDetailPageModule'
-      }
-    ]
   },
   {
     path: 'auth',
