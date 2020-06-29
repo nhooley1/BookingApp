@@ -28,7 +28,6 @@ new Place(
   'A Cool Fortress',
   'https://st2.depositphotos.com/2810819/10354/i/950/depositphotos_103541386-stock-photo-zindan-gate-inside-belgrade-fortress.jpg',
   179.99
-
 )
 ];
     
@@ -36,6 +35,14 @@ new Place(
 
     return [...this._places];
 
+  }
+
+  getPlace(id: string) {
+
+    return {...this._places.find(
+      p => p.id === id
+    )
+    };
   }
 
   constructor() { }
